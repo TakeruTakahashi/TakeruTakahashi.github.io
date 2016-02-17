@@ -7,6 +7,7 @@ ul.mainMenu{
   table-layout: fixed;
   height: 50px;
   margin: 0 auto;
+  padding: 0;
 }
 
 ul.mainMenu li{
@@ -14,7 +15,7 @@ ul.mainMenu li{
   vertical-align: middle;
   text-align: center;
   font-size: 12pt;
-  width:100px;
+  width:100px
 }
 
 ul.mainMenu a:link { color: #FFFFFF; }
