@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lespedeza Horn Ensemble</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/index.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  $(function(){
+  	$('a[href^=#]').click(function(){
+  		var speed = 500;
+  		var href= $(this).attr("href");
+  		var target = $(href == "#" || href == "" ? 'html' : href);
+  		var position = target.offset().top;
+  		$("html, body").animate({scrollTop:position}, speed, "swing");
+  		return false;
+  	});
+  });
+  </script>
+    <!-- Header -->
+    <nav class="navbar-fixed-top" style="background-color: #3E1485">
+      <ul class="mainMenu">
+        <li class="menu-item"><a href="#Home">Home</a></li>
+        <li class="menu-item"><a href="#Info">Info</a></li>
+        <li class="menu-item"><a href="#Profile">Profile</a></li>
+        <li class="menu-item"><a href="#Lonks">Links</a></li>
+      </ul>
+    </nav>
+</head>
+
+<body>
+  <div>
+  </div>
+  <!-- Info -->
+  <div style="margin:80px 20px 20px 40px;" id="Home">
+    <h1 style="color: #3E1485">Lespedeza Horn Ensemble</h1>
+
+  </div>
+
+  <!-- Info -->
+  <div class="panel panel-primary center-block" id="Info">
+    <div class="panel-heading">
+      Info
+    </div>
+    <div class="panel-body">
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <div class="panel panel-primary center-block" id="Profile" >
+    <div class="panel-heading">
+      Profile
+    </div>
+    <div class="panel-body">
+      東北大学交響楽団ホルンセクションOBOG現役の有志によるホルンアンサンブル。</br>
+
+東北大学交響楽団在団中は日常的にホルンアンサンブルに親しみ、4重奏から12重奏までレパートリーは多い。2009年5月に東北大学主催のランチタイムコンサートにおいて福川伸陽氏と共演、2011年9月に東北大学理学部開講100周年記念式典において丸山勉氏と共演を果たす。2015年、本演奏会に向けてLespedeza Horn Ensembleを結成。プロ・アマチュア・観客の垣根を越えて、純粋にホルンアンサンブルを楽しむ演奏会を目指す。Lespedezaは，東北大学のシンボルである萩（Lespedeza）に由来する。
+    </div>
+  </div>
+
+  <!-- Info -->
+  <div class="panel panel-primary center-block" id="Links">
+    <div class="panel-heading">
+      Links
+    </div>
+    <div class="panel-body">
+      <a href="https://twitter.com/LespedezaHorn">Twitter</a>
+      <a href="https://www.facebook.com/LespedezaHornEnsemble/">Facebook</a>
+    </div>
+  </div>
+<footer>
+  <p>Copyright Lespedeza Horn Ensemble 事務局</p>
+</footer>
+</body>
+</html>
