@@ -5,7 +5,6 @@ footer{
 ul.mainMenu{
   display: table;
   table-layout: fixed;
-  width: 500px;
   height: 50px;
   margin: 0 auto;
 }
@@ -15,6 +14,7 @@ ul.mainMenu li{
   vertical-align: middle;
   text-align: center;
   font-size: 12pt;
+  width:100px;
 }
 
 ul.mainMenu a:link { color: #FFFFFF; }
