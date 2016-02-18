@@ -39,6 +39,10 @@ ul.mainMenu a:visited{ color: #FFFFFF; }
 ul.mainMenu a:hover{ color: #E9F1F7; }
 ul.mainMenu a:active{ color: #E9F1F7; }
 
+ul.program-ul li{
+  font-size:12px;
+}
+
 a:link { color: #EF798A; }
 a:visited{ color: #EF798A; }
 a:hover{ color: #F7A9A8; }
