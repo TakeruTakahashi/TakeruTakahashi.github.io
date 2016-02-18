@@ -1,4 +1,6 @@
 body{
+  display: none;
+  font-family: 'Noto Sans Japanese', sans-serif;
 }
 
 span{

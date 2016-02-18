@@ -7,14 +7,25 @@
   <title>Lespedeza Horn Ensemble</title>
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/index.css">
+  <link href='https://fonts.googleapis.com/earlyaccess/notosansjapanese.css' type='text/css' id="webfont">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <script type="text/javascript">
+  (function(){
+    var webfonts = document.getElementById('webfont');
+    webfonts.rel = 'stylesheet';
+  })();
+
+  $(document).ready(function() {
+    $('body').fadeIn(1500);
+  });
+
   $(function(){
   	$('a[href^=#]').click(function(){
   		var speed = 500;
   		var href= $(this).attr("href");
   		var target = $(href == "#" || href == "" ? 'html' : href);
+      <!-- ヘッダ分を引く -->
   		var position = target.offset().top - 55;
   		$("html, body").animate({scrollTop:position}, speed, "swing");
   		return false;
@@ -33,11 +44,11 @@
 </head>
 
 <body>
-  <div style="margin:80px 20px 20px 40px; max-width:800px;" >
+  <div style="padding:80px 20px 20px 40px; margin:0 auto; max-width:800px;" >
 
   <!-- Home -->
   <div id="Home">
-    <h3 style="color: #3E1485">Lespedeza Horn Festival with 丸山勉 and 福川伸陽</h3>
+    <h3 style="color: #3E1485"><span>Lespedeza Horn Festival</span> <span>with 丸山勉 and 福川伸陽</span></h3>
   </div>
   <!-- Info -->
   <div id="Info"/>
@@ -57,7 +68,7 @@
     <h4>Profile</h4>
     <div class="panel panel-primary center-block" >
       <div class="panel-heading">
-        丸山勉 (ホルン)
+        丸山勉 (ホルン) - <font color="#E9F1F7">Maruyama, Tsutomu (Horn)</font>
       </div>
       <div class="panel-body">
         <div class="left-box">
@@ -72,7 +83,7 @@
 
     <div class="panel panel-primary center-block" >
       <div class="panel-heading">
-        福川伸陽 (ホルン)
+        福川伸陽 (ホルン) - <font color="#E9F1F7"> Fukukawa, Nobuaki (Horn)</font>
       </div>
       <div class="panel-body">
         <div class="left-box">
@@ -87,7 +98,7 @@
 
     <div class="panel panel-primary center-block" >
       <div class="panel-heading">
-        大野真由子 (ピアノ)
+        大野真由子 (ピアノ) - <font color="#E9F1F7">Ohno, Mayuko (Piano)</font>
       </div>
       <div class="panel-body">
           <div class="left-box">
@@ -127,25 +138,32 @@
     <h4>Program</h4>
     <ul>
       <li>
-        G. Kerkorian / ホルンのための6重奏
+        グレゴリー・ケルコリアン / ホルンのための6重奏 -
+        <span><font color="#7D82B8">Gregory KerKorian / Sextet for Horns</font></span>
       </li>
       <li>
-        G.H.Händel / 水上の音楽
+        ゲオルク・フリードリヒ・ヘンデル / 水上の音楽 -
+        <span><font color="#7D82B8">Georg Friedrich Händel / Wassermusik </font></span>
       </li>
       <li>
-        R.Bissile / Time and Spase
+        リチャード・ビシル / Time and Space -
+        <span><font color="#7D82B8">Richard Bissill / Time and Space</font></span>
       </li>
       <li>
-        K.Turner / さらば赤い城
+        ケリー・ターナー / さらば赤い城 -
+        <span><font color="#7D82B8">Kerry Turner / Farewell to Redcastle</font></span>
       </li>
       <li>
-        F.Mercury / ボヘミアン・ラプソディー
+        フレディ・マーキュリー / ボヘミアン・ラプソディー -
+        <span><font color="#7D82B8">Freddy Mercury / Bohemian Rhapsody</font></span>
       </li>
       <li>
-        C.M.v.Weber / 魔弾の射手
+        カール・マリア・フォン・ウェーバー / 魔弾の射手 -
+        <span><font color="#7D82B8">Carl Maria von Weber / Der Freischütz</font></span>
       </li>
       <li>
-        R.Schumann / 4本のホルンと管弦楽のためのコンチェルトシュテュック
+        ロベルト・シューマン / 4本のホルンと管弦楽のためのコンチェルトシュテュック -
+        <span><font color="#7D82B8">Roberto Schumann / Konzertstück for Four Horns and Orchestra </font></span>
     </ul>
   </div>
 
