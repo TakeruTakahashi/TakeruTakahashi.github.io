@@ -1,5 +1,19 @@
+body{
+}
+
+span{
+  white-space: nowrap;
+}
+
 footer{
   text-align: center;
+}
+
+h3 {
+  color: #3E1485;
+}
+h4 {
+  color: #3E1485;
 }
 
 ul.mainMenu{
@@ -20,16 +34,53 @@ ul.mainMenu li{
 
 ul.mainMenu a:link { color: #FFFFFF; }
 ul.mainMenu a:visited{ color: #FFFFFF; }
-ul.mainMenu a:hover{ color: #FFFFFF; }
-ul.mainMenu a:active{ color: #FFFFFF; }
+ul.mainMenu a:hover{ color: #E9F1F7; }
+ul.mainMenu a:active{ color: #E9F1F7; }
+
+a:link { color: #EF798A; }
+a:visited{ color: #EF798A; }
+a:hover{ color: #F7A9A8; }
+a:active{ color: #F7A9A8; }
 
 .panel{
   border-color: #3E1485!important;
-  width: 80%;
-  margin-top:20px;
 }
 
 .panel-heading{
   background-color: #3E1485!important;
   border-color: #3E1485!important;
+}
+
+.panel-body{
+  font-size: 12px;
+}
+
+.left-box{
+  width:70%;
+  float: left;
+  padding: 0 5px 0 5px;
+}
+
+.right-box{
+  width: 30%;
+  float:right;
+  padding: 0 5px 0 5px;
+  text-align: center;
+}
+
+@media screen and (max-width: 640px) {
+  .left-box{
+    width:100%;
+    float: none;
+  }
+
+  .right-box{
+    width:100%;
+    float: none;
+  }
+}
+
+.profile-img{
+  width: 100%;
+  max-width: 150px;
 }
