@@ -22,8 +22,8 @@
 
   $(function(){
   	$('a[href^=#]').click(function(){
-  		var speed = 500;
-  		var href= $(this).attr("href");
+      var speed = 500;
+      var href= $(this).attr("href");
   		var target = $(href == "#" || href == "" ? 'html' : href);
       <!-- ヘッダ分を引く -->
   		var position = target.offset().top - 55;
@@ -44,7 +44,7 @@
 </head>
 
 <body>
-  <div id="Home" style="padding:60px 20px 40px 20px; margin:0 auto; max-width:800px;" >
+  <div id="Home" style="padding:40px 20px 40px 20px; margin:0 auto; max-width:800px;" >
 
   <!-- Home -->
   <div>
@@ -66,91 +66,124 @@
   <!-- Profile -->
   <div id="Profile">
     <h4>Profile</h4>
-    <div class="panel panel-primary center-block" >
-      <div class="panel-heading">
-        丸山勉 (ホルン)<span><font color="#E9F1F7"> - Maruyama, Tsutomu (Horn)</font></span>
-      </div>
-      <div class="panel-body">
-        <div class="left-box">
-          プロフィール
-        </div>
-        <div class="right-box">
-          写真
-          <!--<img width="100%" src="img/maruyama.jpg"/>-->
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-primary center-block" >
-      <div class="panel-heading">
-        福川伸陽 (ホルン)<span><font color="#E9F1F7"> - Fukukawa, Nobuaki (Horn)</font></span>
-      </div>
-      <div class="panel-body">
-        <div class="left-box">
-          「福川伸陽のホルンの響きが聴こえてくると、世界が一瞬にして変化するような気がする。
-          ここではない世界のどこからか、不意に風が吹きわたってくるかのように。」(毎日新聞)<br/>
-          「技のデパート」(音楽の友)<br/>
-          「日本のホルン演奏の歴史を変えたといっても過言ではない」（日本ホルン協会）<br/><br/>
-
-          2008年、第77回日本音楽コンクール ホルン部門第１位受賞。<br/>
-          ソリストとして、小林研一郎、沼尻竜典、下野竜也、手塚幸紀、梅田俊明、藤岡幸夫、鈴木優人らの指揮者と、
-          日本フィルハーモニー交響楽団、東京フィルハーモニー交響楽団、Ｎ響メンバーによる室内オーケストラ、
-          横浜シンフォニエッタ、東京ユニバーサル・フィルハーモニー管弦楽団他と共演している。
-          国内外の重要な指揮者、演奏家の信頼も篤く、特にライナー・キュッヒル（ウィーン・フィルハーモニー管弦楽団コンサートマスター）、
-          ハインツ・ホリガー（オーボエ奏者、作曲家）との共演は記憶に新しい。<br/>
-          全国各地においてホール主催のコンサートシリーズにも数多く招かれており、
-          「ラ・フォル・ジュルネ・オ・ジャポン」「東京・春・音楽祭」をはじめとする音楽祭にも多数出演。
-          ホルンのレパートリーの拡大をライフワークとして、作曲家への委嘱や世界初演を積極的に行っている。
-          福川伸陽のために書かれた作品は、吉松隆「Spiral Bird Suite」、藤倉大「PoyoPoyo」、
-          田中カレン「魔法にかけられた森」、川島素晴「Rhapsody in Horn」、酒井健治「告別」、
-          鈴木優人「世界ノ雛型」「モーツァルティアーナ」など数十曲に及ぶほか、現在、藤倉大にホルン協奏曲を委嘱している。
-          ソロ活動はフレンチホルンの分野に留まらず、ナチュラルホルン、ウィンナーホルン、
-          フランス式ピストンホルンなどのピリオド楽器にも及び、特にバロックホルンにおいてはバッハ・コレギウム・ジャパンへも客演した。<br/>
-          近年は室内楽にも力を入れ「N響精鋭メンバーによるハルモニームジーク」やソリスト達で構成される木管アンサンブル「東京六人組」などで
-          積極的な活動を展開。リサイタルや室内楽、協奏曲の演奏は、NHK、テレビ朝日、フジテレビをはじめ、ドイツ、イタリアなどでも放送された。
-          20歳より日本フィルハーモニー交響楽団の首席奏者を務め、2013年、NHK交響楽団に入団、2015年には首席奏者に就任した。<br/>
-          ホルンを丸山勉、故田中正大、ブルーノ・シュナイダー、デヴィッド・パイアット、ジョナサン・リプトンの各氏に師事。
-          在英時にはロンドン交響楽団にも客演した。キングレコードよりソロCD「Rhapsody in Horn」
-          「ラプソディ・イン・ホルン 弐」「Rhapsody in Horn Ⅲ」をリリースしている。<br/>
-          オフィシャルウェブサイト　<a href="http://www.nobuaki-fukukawa.com">www.nobuaki-fukukawa.com</a>
-        </div>
-        <div class="right-box">
-          <img class="profile-img"  src="img/fukukawa.jpg"/>
-        </div>
-      </div>
-    </div>
-
-    <div class="panel panel-primary center-block" >
-      <div class="panel-heading">
-        大野真由子 (ピアノ)<span><font color="#E9F1F7"> - Ohno, Mayuko (Piano)</font></span>
-      </div>
-      <div class="panel-body">
-          <div class="left-box">
-            東京藝術大学音楽学部器楽科卒業、同大学大学院音楽研究科修士課程ピアノ専攻修了。
-            第45・46回鎌倉市学生音楽コンクール第２位、第13回吹田音楽コンクールピアノ部門第１位、第17回友愛ドイツリート（歌曲）コンクール優秀共演者賞等受賞。
-            ソリストとして大阪センチュリー交響楽団、芸大フィルハーモニア等共演。
-            大学卒業時、成績優秀者に与えられる同声会新人賞及び読売新人賞受賞、両新人演奏会出演。
-            室内楽・伴奏ピアニストとしてもレコーディングやアウトリーチコンサート等ジャンルを問わず活動中。
-            これまでに乙幡理恵、竹中淳子、田中由生子、日比谷友妃子 Gabriel Tacchino、角野 裕の各氏に師事。
-            また作曲を大政直人氏に、室内楽を渡辺健二、北川暁子の各氏に、歌曲伴奏をKonrad Richter氏、ピアノデュオを角野 裕氏に師事。 
-            栄区民文化センターリリス・レジデンスアーティスト。現在、東京藝術大学管楽器科非常勤講師（伴奏助手）及び聖徳大学声楽科兼任助手。
+<!--
+    <div class="panel-group list-group" id="accordion">
+      <div class="panel panel-primary center-block">
+        <a class="panel-heading list-group-item" data-toggle="collapse" data-parent="#accordion" data-target="#Fukukawa" style="cursor:pointer" >丸山勉 (ホルン)</a>
+        <div id="Fukukawa" class="panel-collapse collapse">
+          <div class="panel-body">
+            <div class="left-box">
+              プロフィール
+            </div>
+            <div class="right-box">
+              写真
+            </div>
           </div>
-          <div class="right-box">
-            <img class="profile-img"  src="img/ohno.jpg"/>
+        </div>
+      </div>
+    </div>
+-->
+    <div class="panel-group" id="accordion-m">
+      <div class="panel panel-primary center-block">
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-m" data-target="#Maruyama" style="cursor:pointer">
+          丸山勉 (ホルン)<span><font color="#E9F1F7"> - Maruyama, Tsutomu (Horn)</font></span>
+        </div>
+        <div id="Maruyama" class="collapse">
+          <div class="panel-body">
+            <div class="left-box">
+              プロフィール
+            </div>
+            <div class="right-box">
+              写真
+              <!--<img width="100%" src="img/maruyama.jpg"/>-->
+            </div>
           </div>
+        </div>
       </div>
     </div>
 
-    <div class="panel panel-primary center-block" >
-      <div class="panel-heading">
-        Lespedeza Horn Ensemble
+    <div class="panel-group" id="accordion-f">
+      <div class="panel panel-primary center-block" >
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-f" data-target="#Fukukawa" style="cursor:pointer">
+          福川伸陽 (ホルン)<span><font color="#E9F1F7"> - Fukukawa, Nobuaki (Horn)</font></span>
+        </div>
+        <div id="Fukukawa" class="collapse">
+          <div class="panel-body">
+            <div class="left-box">
+              「福川伸陽のホルンの響きが聴こえてくると、世界が一瞬にして変化するような気がする。
+              ここではない世界のどこからか、不意に風が吹きわたってくるかのように。」(毎日新聞)<br/>
+              「技のデパート」(音楽の友)<br/>
+              「日本のホルン演奏の歴史を変えたといっても過言ではない」（日本ホルン協会）<br/><br/>
+
+              2008年、第77回日本音楽コンクール ホルン部門第１位受賞。<br/>
+              ソリストとして、小林研一郎、沼尻竜典、下野竜也、手塚幸紀、梅田俊明、藤岡幸夫、鈴木優人らの指揮者と、
+              日本フィルハーモニー交響楽団、東京フィルハーモニー交響楽団、Ｎ響メンバーによる室内オーケストラ、
+              横浜シンフォニエッタ、東京ユニバーサル・フィルハーモニー管弦楽団他と共演している。
+              国内外の重要な指揮者、演奏家の信頼も篤く、特にライナー・キュッヒル（ウィーン・フィルハーモニー管弦楽団コンサートマスター）、
+              ハインツ・ホリガー（オーボエ奏者、作曲家）との共演は記憶に新しい。<br/>
+              全国各地においてホール主催のコンサートシリーズにも数多く招かれており、
+              「ラ・フォル・ジュルネ・オ・ジャポン」「東京・春・音楽祭」をはじめとする音楽祭にも多数出演。
+              ホルンのレパートリーの拡大をライフワークとして、作曲家への委嘱や世界初演を積極的に行っている。
+              福川伸陽のために書かれた作品は、吉松隆「Spiral Bird Suite」、藤倉大「PoyoPoyo」、
+              田中カレン「魔法にかけられた森」、川島素晴「Rhapsody in Horn」、酒井健治「告別」、
+              鈴木優人「世界ノ雛型」「モーツァルティアーナ」など数十曲に及ぶほか、現在、藤倉大にホルン協奏曲を委嘱している。
+              ソロ活動はフレンチホルンの分野に留まらず、ナチュラルホルン、ウィンナーホルン、
+              フランス式ピストンホルンなどのピリオド楽器にも及び、特にバロックホルンにおいてはバッハ・コレギウム・ジャパンへも客演した。<br/>
+              近年は室内楽にも力を入れ「N響精鋭メンバーによるハルモニームジーク」やソリスト達で構成される木管アンサンブル「東京六人組」などで
+              積極的な活動を展開。リサイタルや室内楽、協奏曲の演奏は、NHK、テレビ朝日、フジテレビをはじめ、ドイツ、イタリアなどでも放送された。
+              20歳より日本フィルハーモニー交響楽団の首席奏者を務め、2013年、NHK交響楽団に入団、2015年には首席奏者に就任した。<br/>
+              ホルンを丸山勉、故田中正大、ブルーノ・シュナイダー、デヴィッド・パイアット、ジョナサン・リプトンの各氏に師事。
+              在英時にはロンドン交響楽団にも客演した。キングレコードよりソロCD「Rhapsody in Horn」
+              「ラプソディ・イン・ホルン 弐」「Rhapsody in Horn Ⅲ」をリリースしている。<br/>
+              オフィシャルウェブサイト　<a href="http://www.nobuaki-fukukawa.com">www.nobuaki-fukukawa.com</a>
+            </div>
+            <div class="right-box">
+              <img class="profile-img"  src="img/fukukawa.jpg"/>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="panel-body">
-        東北大学交響楽団ホルンセクションOBOG現役の有志によるホルンアンサンブル。
-        東北大学交響楽団在団中は日常的にホルンアンサンブルに親しみ、4重奏から12重奏までレパートリーは多い。
-        2009年5月に東北大学主催のランチタイムコンサートにおいて福川伸陽氏と共演、2011年9月に東北大学理学部開講100周年記念式典において丸山勉氏と共演を果たす。
-        2015年、本演奏会に向けてLespedeza Horn Ensembleを結成。プロ・アマチュア・観客の垣根を越えて、純粋にホルンアンサンブルを楽しむ演奏会を目指す。
-        Lespedezaは、東北大学のシンボルである萩（Lespedeza）に由来する。
+    </div>
+
+    <div class="panel-group" id="accordion-o">
+      <div class="panel panel-primary center-block" >
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-o" data-target="#Ohno" style="cursor:pointer">
+          大野真由子 (ピアノ)<span><font color="#E9F1F7"> - Ohno, Mayuko (Piano)</font></span>
+        </div>
+        <div id="Ohno" class="collapse">
+          <div class="panel-body">
+            <div class="left-box">
+              東京藝術大学音楽学部器楽科卒業、同大学大学院音楽研究科修士課程ピアノ専攻修了。
+              第45・46回鎌倉市学生音楽コンクール第２位、第13回吹田音楽コンクールピアノ部門第１位、第17回友愛ドイツリート（歌曲）コンクール優秀共演者賞等受賞。
+              ソリストとして大阪センチュリー交響楽団、芸大フィルハーモニア等共演。
+              大学卒業時、成績優秀者に与えられる同声会新人賞及び読売新人賞受賞、両新人演奏会出演。
+              室内楽・伴奏ピアニストとしてもレコーディングやアウトリーチコンサート等ジャンルを問わず活動中。
+              これまでに乙幡理恵、竹中淳子、田中由生子、日比谷友妃子 Gabriel Tacchino、角野 裕の各氏に師事。
+              また作曲を大政直人氏に、室内楽を渡辺健二、北川暁子の各氏に、歌曲伴奏をKonrad Richter氏、ピアノデュオを角野 裕氏に師事。 
+              栄区民文化センターリリス・レジデンスアーティスト。現在、東京藝術大学管楽器科非常勤講師（伴奏助手）及び聖徳大学声楽科兼任助手。
+            </div>
+            <div class="right-box">
+              <img class="profile-img"  src="img/ohno.jpg"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-group" id="accordion-l">
+      <div class="panel panel-primary center-block" >
+        <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-l" data-target="#Lespedeza" style="cursor:pointer;">
+          Lespedeza Horn Ensemble
+        </div>
+        <div id="Lespedeza" class="collapse">
+          <div class="panel-body">
+            東北大学交響楽団ホルンセクションOBOG現役の有志によるホルンアンサンブル。
+            東北大学交響楽団在団中は日常的にホルンアンサンブルに親しみ、4重奏から12重奏までレパートリーは多い。
+            2009年5月に東北大学主催のランチタイムコンサートにおいて福川伸陽氏と共演、2011年9月に東北大学理学部開講100周年記念式典において丸山勉氏と共演を果たす。
+            2015年、本演奏会に向けてLespedeza Horn Ensembleを結成。プロ・アマチュア・観客の垣根を越えて、純粋にホルンアンサンブルを楽しむ演奏会を目指す。
+            Lespedezaは、東北大学のシンボルである萩（Lespedeza）に由来する。
+          </div>
+        </div>
       </div>
     </div>
   </div>

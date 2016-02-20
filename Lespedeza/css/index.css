@@ -21,7 +21,7 @@ h4 {
 ul.mainMenu{
   display: table;
   table-layout: fixed;
-  height: 50px;
+  height: 40px;
   margin: 0 auto;
   padding: 0;
 }
@@ -43,22 +43,36 @@ ul.program-ul li{
   font-size:12px;
 }
 
-a:link { color: #EF798A; }
-a:visited{ color: #EF798A; }
-a:hover{ color: #F7A9A8; }
-a:active{ color: #F7A9A8; }
+li a:link { color: #EF798A; }
+li a:visited{ color: #EF798A; }
+li a:hover{ color: #F7A9A8; }
+li a:active{ color: #F7A9A8; }
+
+ .panel a:link { color: #EF798A; }
+ a list-group-item:visited{ color: #EF798A; }
+ a list-group-item:hover{ color: #F7A9A8; }
+ a list-group-item:active{ color: #F7A9A8; }
 
 .panel{
-  border-color: #3E1485!important;
+  border-style: none;
+  box-shadow: 0 0 0 0;
 }
 
 .panel-heading{
   background-color: #3E1485!important;
   border-color: #3E1485!important;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.panel-heading:hover{
+  background-color: #EF798A!important;
+  border-color: #EF798A!important;
 }
 
 .panel-body{
   font-size: 12px;
+  border-style: none;
 }
 
 .left-box{
