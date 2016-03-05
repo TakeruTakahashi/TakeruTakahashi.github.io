@@ -38,12 +38,21 @@
         <li class="menu-item"><a href="#Home">Home</a></li>
         <li class="menu-item"><a href="#Profile">Profile</a></li>
         <li class="menu-item"><a href="#Program">Program</a></li>
-        <li class="menu-item"><a href="#Links">Links</a></li>
+        <li class="menu-item"><a href="#SNS">SNS</a></li>
       </ul>
     </nav>
 </head>
 
 <body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=1689409828004781";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
   <div id="Home" style="padding:40px 20px 40px 20px; margin:0 auto; max-width:800px;" >
 
   <!-- Home -->
@@ -66,23 +75,6 @@
   <!-- Profile -->
   <div id="Profile">
     <h4>Profile</h4>
-<!--
-    <div class="panel-group list-group" id="accordion">
-      <div class="panel panel-primary center-block">
-        <a class="panel-heading list-group-item" data-toggle="collapse" data-parent="#accordion" data-target="#Fukukawa" style="cursor:pointer" >丸山勉 (ホルン)</a>
-        <div id="Fukukawa" class="panel-collapse collapse">
-          <div class="panel-body">
-            <div class="left-box">
-              プロフィール
-            </div>
-            <div class="right-box">
-              写真
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
--->
     <div class="panel-group" id="accordion-m">
       <div class="panel panel-primary center-block">
         <div class="panel-heading" data-toggle="collapse" data-parent="#accordion-m" data-target="#Maruyama" style="cursor:pointer">
@@ -91,11 +83,20 @@
         <div id="Maruyama" class="collapse">
           <div class="panel-body">
             <div class="left-box">
-              プロフィール
+              13歳よりホルンをはじめ、和方寛茂、伊藤泰世の各氏に師事。
+              武蔵野音楽大学を卒業。在学中、日本フィルハーモニー交響楽団に入団。
+              ’91年、第8回日本管打楽器コンクール・ホルン部門第1位。
+              ‘93年、ジュネーブに留学、Ｂ．シュナイダー氏に師事。
+              '90年より2000年まで、読売日本交響楽団首席ホルン奏者を務めた。
+              世界ホルンフェスティバル等でゲストアーティストとして招かれる他、ソロ、室内楽、オーケストラ等で多くのCDをリリース。
+              ソロアルバム「ルネッサンス」「レゾナンス」がある。その他、スタジオジブリ作品集、アンサンブルdeディズニー、楽しくアンサンブル、
+              ホルン曲集ポピュラー＆クラシック、丸山勉のディズニー曲集（以上ヤマハM•M）上手になりたい！管楽器」VOL.3「ホルン編」（ビクターE）などの出演・監修も多く手がける。
+              現在、ソロ、室内楽奏者として、また、日本フィルハーモニー客演首席奏者、紀尾井シンフォニエッタ、つの笛集団、カスタム・ウインズ等のメンバーとしても活動。
+              吹奏楽では全日本吹奏楽コンクール等の審査員や全国各地でのホルンクリニックやバンド指導、なにわオルケストラルウインズでも10年以上活躍している。
+              武蔵野音大でも教鞭をとる。日本ホルン協会常任理事。
             </div>
             <div class="right-box">
-              写真
-              <!--<img width="100%" src="img/maruyama.jpg"/>-->
+              <img class="profile-img" src="img/maruyama.jpg"/>
             </div>
           </div>
         </div>
@@ -227,14 +228,12 @@
   <hr/>
 
   <!-- Links -->
-  <div id="Links">
-    <h4>Links</h4>
-    <ul>
-      <li><a href="https://twitter.com/LespedezaHorn">Twitter</a></li>
-      <li><a href="https://www.facebook.com/LespedezaHornEnsemble/">Facebook</a></li>
-    </ul>
+  <div id="SNS">
+    <h4>SNS</h4>
     <a class="twitter-timeline" href="https://twitter.com/LespedezaHorn" data-widget-id="700260671577915393">@LespedezaHornさんのツイート</a>
     <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<div class="fb-page" data-href="https://www.facebook.com/lespedezahornensemble" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/lespedezahornensemble"><a href="https://www.facebook.com/lespedezahornensemble">Lespedeza Horn Ensemble</a></blockquote></div></div>
+    </div>
   </div>
 </div>
 <footer>
