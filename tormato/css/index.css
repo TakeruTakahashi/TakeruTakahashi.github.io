@@ -1,0 +1,15 @@
+body {
+    padding: 10px;
+    background-color: #59a404;
+    text-align: center;
+}
+
+.btn{
+    margin:10px;
+}
+
+.finished {
+    margin: 20px;
+    paddig: 20px;
+    font-size: 144px;
+}

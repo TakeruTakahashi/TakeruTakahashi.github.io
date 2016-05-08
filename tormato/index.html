@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="css/index.css" id="css"/>
+    <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="js/jquery.keyframes.min.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $('.finished').hide();
+            $('.pauseBtn').hide();
+            $('.resumeBtn').hide();
+
+            $.keyframe.define([{
+                name: 'ripen',
+                '0%' : { 'background-color': '#59a404' },
+                '100%' : { 'background-color': '#F74c3c' }
+            }]);
+        })
+                
+        function start(){
+            $('.finished').hide();
+            $('.startBtn').hide();
+            $('.pauseBtn').show();
+            $('.tormato').resetKeyframe();
+            $('.tormato').playKeyframe({
+                name: 'ripen',
+                duration: '1500s',
+                complete: function(){
+                    complete()
+                }
+            });
+        }
+        
+        function pause(){
+            $('.startBtn').hide();
+            $('.pauseBtn').hide();
+            $('.resumeBtn').show();
+            $('.tormato').pauseKeyframe();
+        }
+        
+        function resume(){
+            $('.pauseBtn').show();
+            $('.resumeBtn').hide();
+            $('.tormato').resumeKeyframe({
+                name: 'ripen',
+                complete: function(){
+                    complete()
+                }
+            });
+        }
+        
+        function reset(){
+            $('.finished').hide();
+            $('.startBtn').show();
+            $('.pauseBtn').hide();
+            $('.resumeBtn').hide();
+            $('.resetBtn').hide();
+            $('.tormato').resetKeyframe();
+        }
+        
+        function complete(){
+            $('.finished').fadeIn();
+            $('.startBtn').show();
+            $('.pauseBtn').hide();
+            $('.resumeBtn').hide();
+        }
+    </script>
+</head>
+<body class='tormato'>
+    <div>
+        <input type='button' class='startBtn btn btn-default' value='start' onclick='start()'/>
+        <input type='button' class='pauseBtn btn btn-default' value='pause' onclick='pause()'/>
+        <input type='button' class='resumeBtn btn btn-default' value='resume' onclick='resume()'/>
+        <input type='button' class='resetBtn btn btn-default' value='reset' onclick='reset()'/>
+    </div>
+    <div class="finished">
+        <p>
+            finish
+        <p>
+    </div>
+</body>
+</html>
