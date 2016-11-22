@@ -12,4 +12,14 @@ body {
     margin: 20px;
     paddig: 20px;
     font-size: 144px;
+    display: none;
+}
+
+ul.finished-tasks {
+	list-style-type: none;
+	
+}
+
+ul.finished-tasks li {
+	color: #fff;
 }

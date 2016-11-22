@@ -5,69 +5,12 @@
     <link rel="stylesheet" type="text/css" media="all" href="css/index.css" id="css"/>
     <script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="js/jquery.keyframes.min.js"></script>
-    <script type="text/javascript">
-        $(window).load(function() {
-            $('.finished').hide();
-            $('.pauseBtn').hide();
-            $('.resumeBtn').hide();
-
-            $.keyframe.define([{
-                name: 'ripen',
-                '0%' : { 'background-color': '#59a404' },
-                '100%' : { 'background-color': '#F74c3c' }
-            }]);
-        })
-                
-        function start(){
-            $('.finished').hide();
-            $('.startBtn').hide();
-            $('.pauseBtn').show();
-            $('.tormato').resetKeyframe();
-            $('.tormato').playKeyframe({
-                name: 'ripen',
-                duration: '1500s',
-                complete: function(){
-                    complete()
-                }
-            });
-        }
-        
-        function pause(){
-            $('.startBtn').hide();
-            $('.pauseBtn').hide();
-            $('.resumeBtn').show();
-            $('.tormato').pauseKeyframe();
-        }
-        
-        function resume(){
-            $('.pauseBtn').show();
-            $('.resumeBtn').hide();
-            $('.tormato').resumeKeyframe({
-                name: 'ripen',
-                complete: function(){
-                    complete()
-                }
-            });
-        }
-        
-        function reset(){
-            $('.finished').hide();
-            $('.startBtn').show();
-            $('.pauseBtn').hide();
-            $('.resumeBtn').hide();
-            $('.resetBtn').hide();
-            $('.tormato').resetKeyframe();
-        }
-        
-        function complete(){
-            $('.finished').fadeIn();
-            $('.startBtn').show();
-            $('.pauseBtn').hide();
-            $('.resumeBtn').hide();
-        }
-    </script>
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body class='tormato'>
+	<div>
+		<input type='text' id='task' placeholder='pomodoro for what?'></input>
+	</div>
     <div>
         <input type='button' class='startBtn btn btn-default' value='start' onclick='start()'/>
         <input type='button' class='pauseBtn btn btn-default' value='pause' onclick='pause()'/>
@@ -79,5 +22,7 @@
             finish
         <p>
     </div>
+    <ul id='finished-tasks' class='finished-tasks'>
+    </ul>
 </body>
 </html>
