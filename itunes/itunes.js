@@ -36,7 +36,8 @@ $(function () {
         }).done(function (response) {
             var items = response.results;
             if (items.length < 5) {
-                alert("too few search results!")
+                alert("too few search results!");
+                return;
             }
 
             var candidates = selectCandidates(items.length - 1);
